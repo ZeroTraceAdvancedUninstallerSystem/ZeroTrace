@@ -1,0 +1,16 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroTrace.Native", "src\ZeroTrace.Native\ZeroTrace.Native.csproj", "{f69811d4-824e-4be9-b58b-285295bee67d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroTrace.Core", "src\ZeroTrace.Core\ZeroTrace.Core.csproj", "{ea5780fb-b7ac-4f9e-a251-e50c42ff30e7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroTrace", "src\ZeroTrace\ZeroTrace.csproj", "{2437a39d-7527-4005-91fc-9bc023470750}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+EndGlobal

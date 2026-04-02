@@ -1,0 +1,13 @@
+// ZeroTrace - Advanced Uninstaller System
+// Copyright (c) 2026 Mario B. | MIT License
+
+using ZeroTrace.Core.Models;
+
+namespace ZeroTrace.Core.Discovery;
+
+public interface IDiscoveryProvider
+{
+    string ProviderName { get; }
+    Task<IReadOnlyList<InstalledProgram>> DiscoverAsync(
+        CancellationToken cancellationToken = default);
+}

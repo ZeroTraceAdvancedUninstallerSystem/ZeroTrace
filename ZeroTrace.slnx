@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ZeroTrace.Core/ZeroTrace.Core.csproj" />
+    <Project Path="src/ZeroTrace.Native/ZeroTrace.Native.csproj" />
+    <Project Path="src/ZeroTrace/ZeroTrace.csproj" />
+  </Folder>
+  <Project Path="ZeroTrace.Core/ZeroTrace.Core.csproj" />
+  <Project Path="ZeroTrace.Native/ZeroTrace.Native.csproj" />
+  <Project Path="ZeroTrace/ZeroTrace.csproj" />
+</Solution>
