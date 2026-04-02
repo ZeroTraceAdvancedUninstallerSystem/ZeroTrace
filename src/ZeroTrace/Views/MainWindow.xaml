@@ -1,0 +1,202 @@
+<Window x:Class="ZeroTrace.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ZeroTrace - Advanced Uninstaller System"
+        Height="680" Width="1080"
+        MinHeight="500" MinWidth="800"
+        Background="{StaticResource BgPrimaryBrush}"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ═══ SIDEBAR ═══ -->
+        <Border Grid.Column="0" Background="{StaticResource BgSecondaryBrush}"
+                BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
+            <DockPanel>
+                <!-- Logo -->
+                <StackPanel DockPanel.Dock="Top" Margin="20,24,20,20">
+                    <TextBlock Text="ZeroTrace" FontSize="22" FontWeight="Bold"
+                               Foreground="{StaticResource AccentCyanBrush}"/>
+                    <TextBlock Text="Advanced Uninstaller" FontSize="11"
+                               Foreground="{StaticResource TextMutedBrush}" Margin="0,2,0,0"/>
+                    <TextBlock Text="v1.0 | Mario B." FontSize="10"
+                               Foreground="{StaticResource TextMutedBrush}" Margin="0,2,0,0"/>
+                </StackPanel>
+
+                <!-- Version Info Bottom -->
+                <StackPanel DockPanel.Dock="Bottom" Margin="20,0,20,16">
+                    <Separator Background="{StaticResource BorderBrush}" Margin="0,0,0,12"/>
+                    <TextBlock Text="{Binding PrivilegeDisplay}" FontSize="11"
+                               Foreground="{StaticResource TextMutedBrush}"/>
+                    <TextBlock Text="{Binding StatusMessage}" FontSize="11"
+                               Foreground="{StaticResource AccentGreenBrush}" Margin="0,4,0,0"
+                               TextTrimming="CharacterEllipsis"/>
+                </StackPanel>
+
+                <!-- Navigation Buttons -->
+                <StackPanel Margin="8,0">
+                    <TextBlock Text="NAVIGATION" FontSize="10" FontWeight="SemiBold"
+                               Foreground="{StaticResource TextMutedBrush}"
+                               Margin="12,0,0,8"/>
+
+                    <Button Content="&#x1F50D;  Programme scannen"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ScanCommand}"/>
+                    <Button Content="&#x1F4CB;  Programmliste"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ShowProgramsCommand}"/>
+                    <Button Content="&#x1F9F9;  System bereinigen"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ShowCleanupCommand}"/>
+                    <Button Content="&#x1F512;  Vault / Backups"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ShowVaultCommand}"/>
+
+                    <TextBlock Text="SYSTEM" FontSize="10" FontWeight="SemiBold"
+                               Foreground="{StaticResource TextMutedBrush}"
+                               Margin="12,16,0,8"/>
+
+                    <Button Content="&#x2699;  Einstellungen"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ShowSettingsCommand}"/>
+                    <Button Content="&#x1F6E0;  Admin-Bereich"
+                            Style="{StaticResource NavButton}"
+                            Command="{Binding ShowAdminCommand}"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- ═══ MAIN CONTENT ═══ -->
+        <Grid Grid.Column="1" Margin="24,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="16"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="16"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Page Title -->
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="{Binding CurrentPageTitle}" FontSize="24" FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}"/>
+                <TextBlock Text="{Binding CurrentPageSubtitle}" FontSize="13"
+                           Foreground="{StaticResource TextSecondaryBrush}" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <!-- Quick Stats -->
+            <UniformGrid Grid.Row="2" Columns="4" Margin="0,0,0,0">
+                <!-- Stat 1 -->
+                <Border Style="{StaticResource Card}" Margin="0,0,8,0">
+                    <StackPanel>
+                        <TextBlock Text="Programme" FontSize="11"
+                                   Foreground="{StaticResource TextSecondaryBrush}"/>
+                        <TextBlock Text="{Binding ProgramCount}" FontSize="28" FontWeight="Bold"
+                                   Foreground="{StaticResource AccentCyanBrush}" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Border>
+                <!-- Stat 2 -->
+                <Border Style="{StaticResource Card}" Margin="4,0,8,0">
+                    <StackPanel>
+                        <TextBlock Text="Reste gefunden" FontSize="11"
+                                   Foreground="{StaticResource TextSecondaryBrush}"/>
+                        <TextBlock Text="{Binding ResidualCount}" FontSize="28" FontWeight="Bold"
+                                   Foreground="{StaticResource AccentOrangeBrush}" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Border>
+                <!-- Stat 3 -->
+                <Border Style="{StaticResource Card}" Margin="4,0,8,0">
+                    <StackPanel>
+                        <TextBlock Text="Speicher frei" FontSize="11"
+                                   Foreground="{StaticResource TextSecondaryBrush}"/>
+                        <TextBlock Text="{Binding FreedSpace}" FontSize="28" FontWeight="Bold"
+                                   Foreground="{StaticResource AccentGreenBrush}" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Border>
+                <!-- Stat 4 -->
+                <Border Style="{StaticResource Card}" Margin="4,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Backups" FontSize="11"
+                                   Foreground="{StaticResource TextSecondaryBrush}"/>
+                        <TextBlock Text="{Binding BackupCount}" FontSize="28" FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}" Margin="0,4,0,0"/>
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+
+            <!-- Program List -->
+            <Border Grid.Row="4" Style="{StaticResource Card}">
+                <DockPanel>
+                    <!-- Search + Actions -->
+                    <DockPanel DockPanel.Dock="Top" Margin="0,0,0,12">
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <Button Content="Scannen" Style="{StaticResource ActionButton}"
+                                    Command="{Binding ScanCommand}" Margin="8,0,0,0"/>
+                        </StackPanel>
+                        <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                 Padding="10,8" FontSize="14">
+                            <TextBox.Style>
+                                <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                                    <Setter Property="Tag" Value="Programme suchen..."/>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </DockPanel>
+
+                    <!-- List -->
+                    <ListBox ItemsSource="{Binding FilteredPrograms}"
+                             SelectedItem="{Binding SelectedProgram}"
+                             Background="{StaticResource BgCardBrush}"
+                             BorderThickness="0"
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <DockPanel Margin="4,6">
+                                    <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right"
+                                                VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding FormattedSize}"
+                                                   Foreground="{StaticResource TextMutedBrush}"
+                                                   FontSize="12"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding DisplayName}"
+                                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                                   FontSize="14"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Publisher}"
+                                                       Foreground="{StaticResource TextMutedBrush}"
+                                                       FontSize="12"/>
+                                            <TextBlock Text=" | " Foreground="{StaticResource TextMutedBrush}"
+                                                       FontSize="12"/>
+                                            <TextBlock Text="{Binding DisplayVersion}"
+                                                       Foreground="{StaticResource TextMutedBrush}"
+                                                       FontSize="12"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </DockPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+
+            <!-- Status Bar -->
+            <Border Grid.Row="5" Padding="0,8,0,0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Right" Style="{StaticResource StatusText}"
+                               Text="{Binding ProgramCount, StringFormat='{}{0} Programme'}"/>
+                    <ProgressBar IsIndeterminate="{Binding IsBusy}" Width="120"
+                                 Visibility="{Binding IsBusy, Converter={StaticResource BoolToVisConverter}}"
+                                 Margin="0,0,12,0"/>
+                    <TextBlock Style="{StaticResource StatusText}"
+                               Text="{Binding StatusMessage}"/>
+                </DockPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
