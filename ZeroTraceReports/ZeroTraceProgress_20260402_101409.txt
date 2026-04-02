@@ -1,0 +1,33 @@
+﻿ZeroTrace Fortschrittsbericht
+Projektpfad: C:\Projekte\ZeroTrace\ZeroTrace.Core
+Zeitpunkt:   2026-04-02 10:14:09
+
+Ordner: 9/16 vorhanden
+Dateien: 0/14 vorhanden
+Stark fertig: 0
+Teilweise: 0
+Fehlend: 14
+
+Fehlende Dateien:
+- 01 Models\InstalledProgram.cs
+- 02 Models\ResidualItem.cs
+- 03 Models\VaultBackup.cs
+- 04 Logging\IZeroTraceLogger.cs
+- 05 Logging\FileLogger.cs
+- 06 Discovery\IDiscoveryProvider.cs
+- 07 Discovery\RegistryDiscoveryProvider.cs
+- 08 Discovery\DiscoveryService.cs
+- 09 Uninstall\UninstallService.cs
+- 10 Analysis\ResidualAnalysisEngine.cs
+- 11 Vault\VaultService.cs
+- 12 Cleanup\CleanupService.cs
+- 13 Restore\RestoreService.cs
+- 14 Crypto\CryptoService.cs
+
+Namespace-Issues:
+- obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs -> erwartet namespace ZeroTrace.Core.obj
+- obj\Debug\net10.0\ZeroTrace.Core.AssemblyInfo.cs -> erwartet namespace ZeroTrace.Core.obj
+- obj\Debug\net10.0\ZeroTrace.Core.GlobalUsings.g.cs -> erwartet namespace ZeroTrace.Core.obj
+- obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs -> erwartet namespace ZeroTrace.Core.obj
+- obj\Debug\net8.0\ZeroTrace.Core.AssemblyInfo.cs -> erwartet namespace ZeroTrace.Core.obj
+- obj\Debug\net8.0\ZeroTrace.Core.GlobalUsings.g.cs -> erwartet namespace ZeroTrace.Core.obj

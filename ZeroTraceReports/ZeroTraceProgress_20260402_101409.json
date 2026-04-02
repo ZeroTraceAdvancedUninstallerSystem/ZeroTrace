@@ -1,0 +1,306 @@
+﻿{
+    "ProjectPath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core",
+    "GeneratedAt":  "2026-04-02T10:14:09.8566260+02:00",
+    "FolderResults":  [
+                          {
+                              "Folder":  "Models",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Models"
+                          },
+                          {
+                              "Folder":  "Logging",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Logging"
+                          },
+                          {
+                              "Folder":  "Discovery",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Discovery"
+                          },
+                          {
+                              "Folder":  "Uninstall",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Uninstall"
+                          },
+                          {
+                              "Folder":  "Analysis",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Analysis"
+                          },
+                          {
+                              "Folder":  "Cleanup",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Cleanup"
+                          },
+                          {
+                              "Folder":  "Vault",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Vault"
+                          },
+                          {
+                              "Folder":  "Restore",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Restore"
+                          },
+                          {
+                              "Folder":  "Crypto",
+                              "Exists":  true,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Crypto"
+                          },
+                          {
+                              "Folder":  "SystemClean",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\SystemClean"
+                          },
+                          {
+                              "Folder":  "Performance",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Performance"
+                          },
+                          {
+                              "Folder":  "FileTools",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\FileTools"
+                          },
+                          {
+                              "Folder":  "SystemInfo",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\SystemInfo"
+                          },
+                          {
+                              "Folder":  "Monitor",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Monitor"
+                          },
+                          {
+                              "Folder":  "Shredder",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Shredder"
+                          },
+                          {
+                              "Folder":  "RestorePoints",
+                              "Exists":  false,
+                              "Path":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\RestorePoints"
+                          }
+                      ],
+    "FileResults":  [
+                        {
+                            "Nr":  "01",
+                            "Folder":  "Models",
+                            "File":  "InstalledProgram.cs",
+                            "Aktion":  "Vorhanden/Prüfen",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  2,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Models\\InstalledProgram.cs"
+                        },
+                        {
+                            "Nr":  "02",
+                            "Folder":  "Models",
+                            "File":  "ResidualItem.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Models\\ResidualItem.cs"
+                        },
+                        {
+                            "Nr":  "03",
+                            "Folder":  "Models",
+                            "File":  "VaultBackup.cs",
+                            "Aktion":  "Vorhanden",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  2,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Models\\VaultBackup.cs"
+                        },
+                        {
+                            "Nr":  "04",
+                            "Folder":  "Logging",
+                            "File":  "IZeroTraceLogger.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Logging\\IZeroTraceLogger.cs"
+                        },
+                        {
+                            "Nr":  "05",
+                            "Folder":  "Logging",
+                            "File":  "FileLogger.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  4,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Logging\\FileLogger.cs"
+                        },
+                        {
+                            "Nr":  "06",
+                            "Folder":  "Discovery",
+                            "File":  "IDiscoveryProvider.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Discovery\\IDiscoveryProvider.cs"
+                        },
+                        {
+                            "Nr":  "07",
+                            "Folder":  "Discovery",
+                            "File":  "RegistryDiscoveryProvider.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Discovery\\RegistryDiscoveryProvider.cs"
+                        },
+                        {
+                            "Nr":  "08",
+                            "Folder":  "Discovery",
+                            "File":  "DiscoveryService.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Discovery\\DiscoveryService.cs"
+                        },
+                        {
+                            "Nr":  "09",
+                            "Folder":  "Uninstall",
+                            "File":  "UninstallService.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Uninstall\\UninstallService.cs"
+                        },
+                        {
+                            "Nr":  "10",
+                            "Folder":  "Analysis",
+                            "File":  "ResidualAnalysisEngine.cs",
+                            "Aktion":  "Neu",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Analysis\\ResidualAnalysisEngine.cs"
+                        },
+                        {
+                            "Nr":  "11",
+                            "Folder":  "Vault",
+                            "File":  "VaultService.cs",
+                            "Aktion":  "Neu",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Vault\\VaultService.cs"
+                        },
+                        {
+                            "Nr":  "12",
+                            "Folder":  "Cleanup",
+                            "File":  "CleanupService.cs",
+                            "Aktion":  "Erweitern",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  3,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Cleanup\\CleanupService.cs"
+                        },
+                        {
+                            "Nr":  "13",
+                            "Folder":  "Restore",
+                            "File":  "RestoreService.cs",
+                            "Aktion":  "Neu",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  2,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Restore\\RestoreService.cs"
+                        },
+                        {
+                            "Nr":  "14",
+                            "Folder":  "Crypto",
+                            "File":  "CryptoService.cs",
+                            "Aktion":  "Neu",
+                            "Exists":  false,
+                            "CheckHits":  0,
+                            "CheckTotal":  4,
+                            "FilePath":  "C:\\Projekte\\ZeroTrace\\ZeroTrace.Core\\Crypto\\CryptoService.cs"
+                        }
+                    ],
+    "DetailResults":  [
+                          {
+                              "Name":  "ResidualItem enthält Blake3Hash",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "Logger nutzt async/Task",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "Logger unterstützt CancellationToken",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "DiscoveryService nutzt Parallelisierung",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "UninstallService hat Reboot-Logik",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "ResidualAnalysisEngine erwähnt Blake3",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "ResidualAnalysisEngine erwähnt Merkle",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "VaultService nutzt AesGcm",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "CryptoService erwähnt Argon2",
+                              "Found":  false,
+                              "Snippet":  null
+                          },
+                          {
+                              "Name":  "CryptoService erwähnt Blake3",
+                              "Found":  false,
+                              "Snippet":  null
+                          }
+                      ],
+    "NamespaceIssues":  [
+                            {
+                                "File":  "obj\\Debug\\net10.0\\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            },
+                            {
+                                "File":  "obj\\Debug\\net10.0\\ZeroTrace.Core.AssemblyInfo.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            },
+                            {
+                                "File":  "obj\\Debug\\net10.0\\ZeroTrace.Core.GlobalUsings.g.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            },
+                            {
+                                "File":  "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            },
+                            {
+                                "File":  "obj\\Debug\\net8.0\\ZeroTrace.Core.AssemblyInfo.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            },
+                            {
+                                "File":  "obj\\Debug\\net8.0\\ZeroTrace.Core.GlobalUsings.g.cs",
+                                "Expected":  "namespace ZeroTrace.Core.obj"
+                            }
+                        ]
+}
